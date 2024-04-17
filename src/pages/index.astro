@@ -1,6 +1,9 @@
 ---
 import LayoutSidebar from '../app/LayoutSidebar.astro';
 import LandingReadme from '../modules/LandingReadme.astro';
+if (localStorage.getItem('aaaa') === "test") {
+	return { redirect: '/authentication/sign-in'}
+}
 ---
 
 <LayoutSidebar>

@@ -27,4 +27,12 @@ export interface User {
 	status: string;
 }
 
+export type Tokens = Token[]
+export interface Token {
+	error: boolean;
+	accessToken: string;
+	refreshToken: string;
+	message: string;
+}
+
 export type PlaygroundAction = (typeof playgroundActions)[number];
